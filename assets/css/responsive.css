@@ -125,6 +125,7 @@
   .common-padding {
     padding: 70px 30px;
   }
+  
   .smarter {
     padding-top: 140px;
   }
@@ -470,6 +471,13 @@
 @media (max-width: 1024px) {
   .common-padding {
     padding: 60px 18px;
+  }
+   .common-padding.showcase, .testimonials.common-padding{
+    padding-inline: 36px;
+  }
+  .testimonials, .showcase{
+    margin-left: -18px;
+    margin-right: -18px;
   }
   .smarter::before{
     display: none;
@@ -1084,6 +1092,13 @@
   }
   .common-padding {
     padding: 46px 14px;
+  }
+  .common-padding.showcase, .testimonials.common-padding{
+    padding-inline: 28px;
+  }
+  .testimonials, .showcase{
+    margin-left: -14px;
+    margin-right: -14px;
   }
   .smarter {
     padding-top: 92px;

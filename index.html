@@ -14,10 +14,10 @@
     rel="stylesheet">
 
   <!-- Swiper CSS -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="./assets/css/swiper-bundle.min.css" />
 
   <!-- AOS (Animate On Scroll) CSS -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
+  <link rel="stylesheet" href="./assets/css/aos.css" />
 
 
   <!-- Main CSS -->
@@ -1483,10 +1483,10 @@
   </button>
 
   <!-- Swiper JS -->
-  <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+  <script src="./assets/js/swiper-bundle.min.js"></script>
 
   <!-- AOS JS -->
-  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script src="./assets/js/aos.js"></script>
 
   <!-- Main JS -->
   <script src="./assets/js/script.js"></script>
@@ -1497,6 +1497,9 @@
       duration: 700,
       easing: 'ease-out-cubic',
       once: true,
+      disable: function () {
+        return window.innerWidth < 1024;
+      },
       offset: 80
     });
 

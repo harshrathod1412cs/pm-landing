@@ -37,21 +37,57 @@ if (burger && mobileNav) {
 
 /* ---- Hero Swiper ---- */
 const heroSwiper = new Swiper(".heroSwiper", {
-  slidesPerView: 1,
-  slideToClickedSlide: true,
+  slidesPerView: 1.05,
   centeredSlides: true,
-  spaceBetween: 0,        /* no gap between slides */
   loop: true,
   speed: 700,
   effect: "slide",
-  keyboard: { enabled: true },
-  a11y: { enabled: true },
+
+  keyboard: {
+    enabled: true,
+  },
+
+  autoplay: {
+    delay: 3000,
+    disableOnInteraction: false,
+    pauseOnMouseEnter: true,
+  },
 
   breakpoints: {
-    768:  { slidesPerView: 1.35, spaceBetween: 0 },
-    1024: { slidesPerView: 1.42, spaceBetween: 0 },
-    1280: { slidesPerView: 1.48, spaceBetween: 0 },
-    1440: { slidesPerView: 1.5, spaceBetween: 0 },
+    // Mobile
+    320: {
+      slidesPerView: 1.05,
+      spaceBetween: -80,
+    },
+
+    // Large Mobile
+    480: {
+      slidesPerView: 1.1,
+      spaceBetween: -120,
+    },
+
+    // Tablet
+    768: {
+      slidesPerView: 1.2,
+      spaceBetween: -250,
+    },
+
+    // Small Laptop
+    1024: {
+      slidesPerView: 1.35,
+      spaceBetween: -300,
+    },
+
+    // Desktop
+    1280: {
+      slidesPerView: 1.45,
+    },
+
+    // Large Desktop
+    1440: {
+      slidesPerView: 1.5,
+      spaceBetween: -900,
+    },
   },
 });
 
@@ -68,11 +104,11 @@ const testiSwiper = new Swiper(".testiSwiper", {
 
   loop: true,
 
-  // autoplay: {
-  //   delay: 3000,
-  //   disableOnInteraction: false,
-  //   pauseOnMouseEnter: true,
-  // },
+  autoplay: {
+    delay: 3000,
+    disableOnInteraction: false,
+    pauseOnMouseEnter: true,
+  },
 
   speed: 600,
 
@@ -275,23 +311,58 @@ const testiSwiper = new Swiper(".testiSwiper", {
 
 /* ── 1. Init Swiper ── */
 const smarterSwiper = new Swiper(".smarterSwiper", {
-  slidesPerView: 1,
+  slidesPerView: 1.1,
   centeredSlides: true,
-  spaceBetween: 0,
   loop: true,
   speed: 480,
   effect: "slide",
   allowTouchMove: false,
-  keyboard: { enabled: true },
+  keyboard: {
+    enabled: true,
+  },
 
   breakpoints: {
-    0: { slidesPerView: 1.1 },
-    480: { slidesPerView: 1.4 },
-    640: { slidesPerView: 1.5 },
-    768: { slidesPerView: 1.55 },
-    1024: { slidesPerView: 1.65 },
-    1280: { slidesPerView: 1.7 },
-    1440: { slidesPerView: 1.8 },
+    // Mobile
+    320: {
+      slidesPerView: 1.1,
+      spaceBetween: -20,
+    },
+
+    // Large Mobile
+    480: {
+      slidesPerView: 1.3,
+      spaceBetween: -40,
+    },
+
+    // Tablet
+    640: {
+      slidesPerView: 1.45,
+      spaceBetween: -60,
+    },
+
+    // Tablet Landscape
+    768: {
+      slidesPerView: 1.55,
+      spaceBetween: -80,
+    },
+
+    // Laptop
+    1024: {
+      slidesPerView: 1.65,
+      spaceBetween: -100,
+    },
+
+    // Desktop
+    1280: {
+      slidesPerView: 1.7,
+      spaceBetween: -120,
+    },
+
+    // Large Desktop
+    1440: {
+      slidesPerView: 1.8,
+      spaceBetween: -120,
+    },
   },
 });
 
