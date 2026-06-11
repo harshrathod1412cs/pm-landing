@@ -86,7 +86,7 @@ const heroSwiper = new Swiper(".heroSwiper", {
     // Large Desktop
     1440: {
       slidesPerView: 1.5,
-      spaceBetween: -900,
+      spaceBetween: -650,
     },
   },
 });
