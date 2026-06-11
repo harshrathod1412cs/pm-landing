@@ -1262,7 +1262,7 @@ p {
 
 /* Pagination wrapper */
 .testiSwiper .swiper-pagination {
-  bottom: 0 !important;
+  bottom: 4px !important;
   display: flex;
   align-items: center;
   justify-content: center;
